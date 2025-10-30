@@ -9,37 +9,37 @@ export default function InstallationSection() {
       title: "Automatic Sliding Doors",
       image: "/assets/home/section-hero-1.png",
       description:
-        "Seamless glass doors that ensure smooth entry and exit for high-traffic areas.",
+        "High-performance automatic sliding doors for malls, offices, and hospitals — ensuring silent operation, durability, and seamless access flow across UAE businesses.",
     },
     {
       title: "Automatic Swing Doors",
       image: "/assets/home/section-hero-2.png",
       description:
-        "Energy-efficient swing systems that combine style and accessibility.",
+        "Elegant, energy-efficient swing door systems designed for accessibility and safety in offices, hospitals, and commercial entrances across Dubai and the UAE.",
     },
     {
       title: "Automatic Breakout Doors",
       image: "/assets/home/section-hero-3.png",
       description:
-        "Designed for safety and convenience in commercial and emergency exits.",
+        "Smart breakout door solutions that combine daily convenience with emergency egress compliance — ideal for schools, hospitals, and retail spaces in the UAE.",
     },
     {
       title: "Automatic Telescopic Doors",
       image: "/assets/home/section-hero-4.png",
       description:
-        "Compact door systems ideal for areas with limited side space.",
+        "Space-saving telescopic automatic doors that maximize clear openings in compact entrances — perfect for retail stores, corridors, and logistics facilities.",
     },
     {
       title: "Automatic & Manual Revolving Doors",
       image: "/assets/home/section-hero-5.png",
       description:
-        "Enhance energy efficiency and style with our revolving door solutions.",
+        "Premium revolving door systems that reduce air infiltration, enhance energy efficiency, and add a sophisticated look to hotels, offices, and malls.",
     },
     {
       title: "Folding Doors & Movable Partitions",
       image: "/assets/home/section-hero-6.png",
       description:
-        "Flexible and elegant partition systems for modern interiors and offices.",
+        "Versatile folding doors and movable partitions offering flexible layouts, acoustic control, and modern design for offices and commercial interiors.",
     },
   ];
 
@@ -53,17 +53,12 @@ export default function InstallationSection() {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden" id="services">
       <div className="container mx-auto px-6 lg:px-12 text-center">
-        {/* Section Title */}
         <motion.h2
           className="text-3xl md:text-4xl font-extrabold text-gray-900"
           initial={{ opacity: 0, y: 20 }}
@@ -85,7 +80,6 @@ export default function InstallationSection() {
           tailored to your needs.
         </motion.p>
 
-        {/* Animated Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -96,30 +90,24 @@ export default function InstallationSection() {
           {installations.map((item, index) => (
             <motion.div
               key={index}
-              // variants={cardVariants}
+              variants={cardVariants}
+              className="relative bg-white rounded-xl shadow-md overflow-hidden group"
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className="relative bg-white rounded-xl shadow-md overflow-hidden group cursor-pointer"
             >
               {/* Image */}
-              <motion.div
-                className="relative w-full h-56"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.4 }}
-              >
+              <div className="relative w-full h-56">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
 
-                {/* Overlay */}
+                {/* Overlay appears on hover */}
                 <motion.div
-                  className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4"
+                  initial={false}
                 >
                   <motion.p
                     className="text-white text-sm md:text-base leading-relaxed text-center"
@@ -130,18 +118,14 @@ export default function InstallationSection() {
                     {item.description}
                   </motion.p>
                 </motion.div>
-              </motion.div>
+              </div>
 
               {/* Title */}
-              <motion.div
-                className="p-5 text-left"
-                whileHover={{ y: -2 }}
-                transition={{ duration: 0.2 }}
-              >
+              <div className="p-5 text-left">
                 <h3 className="text-lg font-semibold text-gray-900 leading-snug">
                   {item.title}
                 </h3>
-              </motion.div>
+              </div>
             </motion.div>
           ))}
         </motion.div>

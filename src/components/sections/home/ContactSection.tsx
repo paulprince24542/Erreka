@@ -22,7 +22,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-20 bg-gray-50 overflow-hidden">
+    <section className="py-20 bg-gray-50 overflow-hidden" id="contact">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Heading */}
         <motion.div

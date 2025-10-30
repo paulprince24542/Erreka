@@ -4,30 +4,57 @@ import { motion } from "framer-motion";
 import { Clock, Award, Shield, ThumbsUp } from "lucide-react";
 
 export default function FeaturesSection() {
+  // const features = [
+  //   {
+  //     icon: <Clock className="w-8 h-8 text-[#F59E0B]" />,
+  //     title: "Years of Experience",
+  //     description:
+  //       "Benefit from our extensive experience and the deep knowledge needed to ensure your automatic doors are installed perfectly and are safe for all visitors.",
+  //   },
+  //   {
+  //     icon: <Award className="w-8 h-8 text-[#F59E0B]" />,
+  //     title: "Quality & Durability",
+  //     description:
+  //       "We use tough, sturdy, and durable materials such as aluminium, steel, and fibreglass to compliment your business's unique style.",
+  //   },
+  //   {
+  //     icon: <ThumbsUp className="w-8 h-8 text-[#F59E0B]" />,
+  //     title: "Unmatched Convenience",
+  //     description:
+  //       "Our automatic doors eliminate the effort of opening heavy manual doors and come with options for access via remote control or security code.",
+  //   },
+  //   {
+  //     icon: <Shield className="w-8 h-8 text-[#F59E0B]" />,
+  //     title: "Safety First",
+  //     description:
+  //       "All our doors are manufactured and installed according to the highest standards for quality and safety, ensuring a safe, convenient environment for everyone.",
+  //   },
+  // ];
+
   const features = [
     {
       icon: <Clock className="w-8 h-8 text-[#F59E0B]" />,
-      title: "Years of Experience",
+      title: "Extensive Experience",
       description:
-        "Benefit from our extensive experience and the deep knowledge needed to ensure your automatic doors are installed perfectly and are safe for all visitors.",
+        "With over 15 years of specialising in automatic entrance systems across the UAE, we bring deep technical knowledge, project-scale know-how and a full project lifecycle approach.",
     },
     {
       icon: <Award className="w-8 h-8 text-[#F59E0B]" />,
       title: "Quality & Durability",
       description:
-        "We use tough, sturdy, and durable materials such as aluminium, steel, and fibreglass to compliment your business's unique style.",
+        "We select premium aluminium and stainless-steel frames (6005-T6 / SS 304), partnered with market-leading automation drives (dormakaba, GEZE) to ensure long-life performance in high-traffic environments.",
     },
     {
       icon: <ThumbsUp className="w-8 h-8 text-[#F59E0B]" />,
-      title: "Unmatched Convenience",
+      title: "Seamless Convenience",
       description:
-        "Our automatic doors eliminate the effort of opening heavy manual doors and come with options for access via remote control or security code.",
+        "From sensor-activated sliding doors to code-enabled swing systems and remote-controlled access, our solutions minimise manual effort and optimise entry/exit flows for employees, visitors and goods.",
     },
     {
       icon: <Shield className="w-8 h-8 text-[#F59E0B]" />,
-      title: "Safety First",
+      title: "Safety & Compliance First",
       description:
-        "All our doors are manufactured and installed according to the highest standards for quality and safety, ensuring a safe, convenient environment for everyone.",
+        "Every installation conforms to global standards (EN 16005, UL 325) and includes emergency breakout/safe-fail mechanisms, giving you peace of mind for both regulatory and operational safety.",
     },
   ];
 

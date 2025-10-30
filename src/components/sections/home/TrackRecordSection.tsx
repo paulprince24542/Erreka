@@ -54,8 +54,7 @@ export default function TrackRecordSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          We are proud to have delivered exceptional entrance solutions for a
-          diverse range of clients across the UAE.
+          Trusted by Leading Commercial Brands Across the UAE
         </motion.p>
 
         {/* Projects Grid */}

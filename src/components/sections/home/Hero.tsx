@@ -16,7 +16,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full">
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto px-6 lg:px-12 lg:mt-15">
           <motion.div
             className="max-w-2xl text-left text-white"
             initial={{ opacity: 0, y: 50 }}
@@ -31,7 +31,8 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Seamless & Secure Automatic <br /> Entrance Solutions
+              Seamless, Secure & Built for Commercial-Grade Demand
+              {/* Seamless & Secure Automatic <br /> Entrance Solutions */}
             </motion.h1>
 
             <motion.p
@@ -41,9 +42,11 @@ export default function Hero() {
               transition={{ duration: 0.9, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              We enhance the flow and convenience in your business by providing
-              innovative and reliable automated entrance solutions for the
-              front, back, and interior of any building.
+              At Erreka Technical Services, we specialise in the sale,
+              installation and maintenance of commercial automatic
+              doors—including sliding, swing, revolving & telescopic models—for
+              businesses across the UAE. Experience upgraded access, enhanced
+              safety and reduced operational effort in every entryway.
             </motion.p>
 
             <motion.div

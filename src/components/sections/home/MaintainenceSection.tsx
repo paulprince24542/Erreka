@@ -16,15 +16,21 @@ export default function MaintenanceSection() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Proper maintenance is crucial to keep your automatic doors
-              functional for their full service life. Our expert team inspects
-              and resolves any issue in a timely manner.
+              At Erreka Technical Services, we understand that even the best
+              entrance systems need ongoing care. Our Full Maintenance Scheme
+              covers automatic door systems for commercial properties across
+              Dubai and the UAE, offering scheduled inspections, priority
+              breakdown response (4-hour response time), a stocked parts
+              warehouse and a fixed-cost invoicing model to assist with
+              budgeting.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              We offer a Full Maintenance Scheme where your doors are inspected
-              and preventative maintenance is performed for a pre-determined
-              fixed cost, helping you budget effectively.
+              Our clients include retail chains, logistics warehouses and
+              high-rise office towers with 24/7 operational demands. By
+              entrusting us with your maintenance, you reduce unplanned
+              downtime, extend system life and maintain compliance with safety
+              certifications.
             </p>
 
             <Link

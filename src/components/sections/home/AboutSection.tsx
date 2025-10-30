@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden" id="about">
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
         {/* Text Content */}
         <motion.div
@@ -33,10 +33,16 @@ export default function AboutSection() {
             transition={{ duration: 0.7, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Established in the UAE, Erreka Technical Services is dedicated to
-            providing the best and most reliable sales and service support in
-            the field of automatic doors. We connect people, places, and goods
-            seamlessly and efficiently.
+            Founded in 2014 and based in Dubai, Erreka Technical Services
+            L.L.C. serves the UAE’s commercial building sector with premium
+            automatic entrance systems. Specialising in automatic sliding,
+            swing, revolving and telescopic door installations, we combine local
+            expertise, certified installers and maintenance support to deliver
+            seamless access solutions. With a client-first approach and a
+            portfolio spanning retail, hospitality, logistics and healthcare
+            facilities, our mission is to build safe, efficient and dependable
+            entrances that elevate visitor experience and operational
+            performance.
           </motion.p>
 
           <motion.p
